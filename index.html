@@ -6,11 +6,81 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>sla</h1>
+    <h1>oi emerson</h1>
+    <button type="button" onclick="mostraAlerta()">clica aqui</button>
+
+    <p id="textoQqr">texto que nao importa</p>
+
+    <h5>VSF</h5>
+    <h5>VSF2</h5>
+    <h5>VSF3</h5>
+    <h5>VSF4</h5>
+
+    <ul class="red">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <p class="red">texto qualquer com classe</p>
+
+    <h3 class="query">query</h3>
+    <h3 class="query">query2</h3>
+    <!-- 2 elementos, mas só um é pego com o querySelector -->
+
+    <h4 class="queryAll">queryAll</h4>
+    <h4 class="queryAll">queryAll2</h4>
+    <h4 class="queryAll">queryAll3</h4>
+
+
 </body>
 
 <script>
+    alert("Olá usuário")
+
+    function mostraAlerta(){
+        alert("vc clicou no botão")
+    }
+
+    const textoqqr = document.getElementById('textoQqr')
+    //pega um elemnto pelo id
+    textoqqr.innerHTML += " dane-se"
+    //concatena um outro texto ao texto que nao importa
+
+    const h5 = document.getElementsByTagName("h5")
+    //pega todos os elementos que são h5
+    console.log(h5)
+
+    for (let i = 0; i < h5.length; i++) {
+        h5[i].innerHTML = "texto legal"
+    }
+    //mudando o texto de todos os atributos que são h5
+
+    const redThings = document.getElementsByClassName("red")
+    //pegando todos os elementos com a classe red
+
+    for (let i = 0; i < redThings.length; i++) {
+        redThings[i].style.color = "red"
+    }
+    //setando a cor de todos eles p/ vermelho
+
+    const query = document.querySelector(".query");
+    //com o query selector podemos pegar qualquer elemento, basta dar o tipo (. pra class, # pra id etc)
+    //pegamos apenas o primeiro elemento que tiver aquele id, classe ou elemento
     
+    query.style.color = "blue"
+    //mudando a cor do elemento p azul
+
+    const queryAll = document.querySelector(".queryAll");
+    //com o query selector all podemos pegar qualquer elemento, basta dar o tipo dele (. pra class, # pra id etc)
+    //diferente do selector normal, pegamos todos os elementos referenciados
+    console.log(queryAll)
+    queryAll.style.color = "green"
+    for (let i = 0; i < queryAll.length; i++) {
+        queryAll[i].style.color = "green"
+    }
+
 </script>
 
 </html>
