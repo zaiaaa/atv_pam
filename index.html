@@ -72,11 +72,10 @@
     query.style.color = "blue"
     //mudando a cor do elemento p azul
 
-    const queryAll = document.querySelector(".queryAll");
+    const queryAll = document.querySelectorAll(".queryAll");
     //com o query selector all podemos pegar qualquer elemento, basta dar o tipo dele (. pra class, # pra id etc)
     //diferente do selector normal, pegamos todos os elementos referenciados
     console.log(queryAll)
-    queryAll.style.color = "green"
     for (let i = 0; i < queryAll.length; i++) {
         queryAll[i].style.color = "green"
     }
