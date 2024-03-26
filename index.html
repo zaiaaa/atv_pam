@@ -33,6 +33,10 @@
     <h4 class="queryAll">queryAll2</h4>
     <h4 class="queryAll">queryAll3</h4>
 
+    <input type="text" name="" id="input">
+    <button type="button" id="botao">Botão</button>
+
+    <p id="textoInput"></p>
 
 </body>
 
@@ -80,6 +84,71 @@
         queryAll[i].style.color = "green"
     }
 
+
+    const botao = document.getElementById("botao")
+    const input = document.getElementById("input")
+    const textoInput = document.getElementById("textoInput")
+
+    botao.addEventListener("mouseover", () => {
+        botao.style.backgroundColor = "red"
+    })
+    //se o mouse passar por cima do botao ele vai ficar vermelho
+
+    botao.addEventListener("focus", () => {
+        botao.style.backgroundColor = "blue"
+    })
+    //quando ele tiver o foco ele vai ficar azul, seja com tab ou com clique
+
+    input.addEventListener("change", (e) => {
+        textoInput.innerHTML = e.target.value
+    })
+    //sempre que houver uma mudança de foco do input o texto vai ser imprimido embaixo
+
+    botao.addEventListener("click", () => {
+        textoInput.innerHTML = "Vc clicou no botão"
+    })
+
+    function dizOla(){
+        alert("Olá usuario")
+    }
+    //Função declarada
+
+    function dizOlaPraUsuario(usuario){
+        return `Olá usuarios ${usuario}`
+    }
+    //função declarada com parametro
+
+    class Funcionario{
+        constructor(nome, idade, isMaior){
+            this.nome = nome
+            this.idade = idade
+            this.isMaior = false
+        }
+
+        getIdade(){
+            if(this.idade >= 18){
+                this.isMaior = true
+            }
+            
+            this.isMaior ? console.log(`Sua idade é ${this.idade} e vc é maior de idade`) :console.log(`Sua idade é ${this.idade} e vc é menor de idade`)
+        }
+    }
+    
+    const funcionario1 = new Funcionario("José", 15)
+    funcionario1.getIdade()
+    //função com construtor dentro de uma classe.
+
+    const calc = function xAndY(x, y){
+       alert(x + y)
+    }
+    calc(5, 9)
+    //função declarada com variavel
+
+    const sla = () => {
+        console.log("arrow function potente")
+    }
+    sla()
+    //arrow function
 </script>
 
 </html>

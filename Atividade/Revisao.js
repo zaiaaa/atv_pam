@@ -9,28 +9,28 @@
 //     . document.querySelector();
 //     . document.querySelectorAll();
 
-4) Descreva e crie exemplos com suas formas diferente eventos no javascript,segue alguns exemplo:
-  . onmouseover
-  . onfocus;
-  . onchange;
-  . entre outros; 
+// 4) Descreva e crie exemplos com suas formas diferente eventos no javascript,segue alguns exemplo:
+//   . onmouseover
+//   . onfocus;
+//  . onchange;
+//  . entre outros; 
 
- 5) De exemplo de os tipos de funções:
-    . Função Nomeada;
-    . Função Nomeada com argumento(parametro) e retorno;
-    . Função com Construtor;
-    . Função Literal (variável);
-    . Função de Flecha(Arrow functions);
+//  5) De exemplo de os tipos de funções:
+//     . Função Nomeada;
+   //  . Função Nomeada com argumento(parametro) e retorno;
+   //  . Função com Construtor;
+   //  . Função Literal (variável);
+   //  . Função de Flecha(Arrow functions);
 
- 6)  Desenvolva um script qua ao clicar no botão conta o numero de vezes clicado,
-em que seja separado o HTML e o JavaScript.
+//  6)  Desenvolva um script qua ao clicar no botão conta o numero de vezes clicado,
+// em que seja separado o HTML e o JavaScript.
 
- 7) Crie uma função que receba uma string como parâmetro
-     e retorne a mesma string com todas as letras em caixa alta.
-    Utilize essa função para converter diferentes strings.
+//  7) Crie uma função que receba uma string como parâmetro
+//      e retorne a mesma string com todas as letras em caixa alta.
+//     Utilize essa função para converter diferentes strings.
 
- 8) Crie uma função que receba dois números como parâmetros e retorne a soma deles.
-     Utilize essa função para realizar somas diferentes.
+//  8) Crie uma função que receba dois números como parâmetros e retorne a soma deles.
+//      Utilize essa função para realizar somas diferentes.
 
   
 
